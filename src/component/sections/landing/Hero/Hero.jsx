@@ -31,7 +31,7 @@ const Hero = () => {
         <section className="hero">
             <div className="hero__content">
                 <h1 className="hero__title" ref={titleRef}>
-                    Transformamos el tráfico de tu negocio
+                    Transformamos <span className="hero__title--light">el</span> tráfico <span className="hero__title--light">de</span> <span className="hero__title--light">tu</span> negocio
                 </h1>
                 <p className="hero__subtitle" ref={subtitleRef}>
                     Te guiamos en cada paso
