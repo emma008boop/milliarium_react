@@ -1,10 +1,8 @@
 .home {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
-.home > * {
-    scroll-snap-align: start;
+.home > section {
+    min-height: 100vh;
 }
