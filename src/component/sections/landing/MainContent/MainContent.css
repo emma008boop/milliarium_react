@@ -1,0 +1,10 @@
+.main-content {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main-content__inner {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: var(--space-8);
+}

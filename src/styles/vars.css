@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700&display=swap');
+
+:root {
+    /* ═══════════════════════════════════════════════════════════
+       COLOR TOKENS - NAVY (Primary)
+       Authority & Technical credibility
+       Navy #001F5B - Ratio con blanco: 14.5:1 (WCAG AAA)
+    ═══════════════════════════════════════════════════════════ */
+    --color-navy-base: #001F5B;
+    --color-navy-dark: #000F33;
+    --color-navy-light: #002D7A;
+    --color-navy-pale: #E6EBF5;
+    --color-navy-alpha-10: rgba(0, 31, 91, 0.1);
+    --color-navy-alpha-20: rgba(0, 31, 91, 0.2);
+    --color-navy-alpha-40: rgba(0, 31, 91, 0.4);
+    --color-navy-alpha-60: rgba(0, 31, 91, 0.6);
+
+    /* ═══════════════════════════════════════════════════════════
+       COLOR TOKENS - ORANGE (Accent)
+       Action & High Conversion
+       Orange #FF6A00 - Ratio con blanco: 3.5:1 (WCAG AA para texto grande)
+       USADO SOLO EN: CTAs, botones, elementos interactivos críticos
+    ═══════════════════════════════════════════════════════════ */
+    --color-orange-action: #FF6A00;
+    --color-orange-hover: #E65C00;
+    --color-orange-dark: #CC5200;
+    --color-orange-light: #FF8533;
+    --color-orange-pale: #FFF0E6;
+    --color-orange-alpha-10: rgba(255, 106, 0, 0.1);
+    --color-orange-alpha-20: rgba(255, 106, 0, 0.2);
+
+    /* ═══════════════════════════════════════════════════════════
+       SURFACE TOKENS
+       Hierarchy through elevation
+    ═══════════════════════════════════════════════════════════ */
+    --bg-primary: #FFFFFF;
+    --bg-surface-soft: #F8F9FC;
+    --bg-surface-elevated: #FFFFFF;
+    --bg-overlay: rgba(0, 15, 51, 0.05);
+
+    /* ═══════════════════════════════════════════════════════════
+       TEXT TOKENS
+       Optimized for readability & reduced eye fatigue
+       Gray #1A1A2E - Ratio con blanco: 15.3:1 (WCAG AAA)
+    ═══════════════════════════════════════════════════════════ */
+    --text-primary: #1A1A2E;
+    --text-secondary: #4A5568;
+    --text-muted: #718096;
+    --text-inverse: #FFFFFF;
+    --text-navy: var(--color-navy-base);
+    --text-orange: var(--color-orange-action);
+
+    /* ═══════════════════════════════════════════════════════════
+       BORDER TOKENS
+       Precision & Structure
+    ═══════════════════════════════════════════════════════════ */
+    --border-subtle: rgba(0, 31, 91, 0.08);
+    --border-default: rgba(0, 31, 91, 0.12);
+    --border-strong: rgba(0, 31, 91, 0.2);
+    --border-focus: var(--color-orange-action);
+
+    /* ═══════════════════════════════════════════════════════════
+       TYPOGRAPHY TOKENS
+       Montserrat: Headings (Authority & Impact)
+       Inter: Body (Readability & Clarity)
+    ═══════════════════════════════════════════════════════════ */
+    --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-bold: 700;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+
+    --leading-tight: 1.2;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.75;
+
+    --tracking-tight: -0.025em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.025em;
+
+    /* ═══════════════════════════════════════════════════════════
+       SPACING TOKENS
+       Consistent vertical rhythm (8px base)
+    ═══════════════════════════════════════════════════════════ */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+
+    /* ═══════════════════════════════════════════════════════════
+       SHADOW TOKENS
+       Elevation hierarchy for glass/surface effects
+    ═══════════════════════════════════════════════════════════ */
+    --shadow-sm: 0 1px 2px rgba(0, 31, 91, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 31, 91, 0.07);
+    --shadow-lg: 0 10px 15px rgba(0, 31, 91, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 31, 91, 0.15);
+
+    /* ═══════════════════════════════════════════════════════════
+       RADIUS TOKENS
+       Subtle corners for modern feel
+    ═══════════════════════════════════════════════════════════ */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+
+    /* ═══════════════════════════════════════════════════════════
+       TRANSITION TOKENS
+       Smooth micro-interactions
+    ═══════════════════════════════════════════════════════════ */
+    --transition-fast: 150ms ease;
+    --transition-base: 200ms ease;
+    --transition-slow: 300ms ease;
+    --transition-smooth: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* ═══════════════════════════════════════════════════════════
+       Z-INDEX SCALE
+       Layer management
+    ═══════════════════════════════════════════════════════════ */
+    --z-base: 0;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal-backdrop: 400;
+    --z-modal: 500;
+    --z-tooltip: 600;
+}

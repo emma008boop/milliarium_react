@@ -1,0 +1,68 @@
+{
+  "name": "milliarium-react",
+  "type": "web-app",
+  "framework": "react",
+  "entryPoint": "src/main.jsx",
+  "distFolder": "dist",
+  "permissions": {
+    "fileSystem": "write",
+    "allowAutoEdit": true,
+    "mode": "development",
+    "type": "edit"
+  },
+  "scripts": {
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "test": "npm run test"
+  },
+  "metadata": {
+    "language": "javascript",
+    "styling": "css",
+    "version": "1.0.0",
+    "status": "active"
+  },
+  "brand": {
+    "name": "Milliarium",
+    "dna": ["Autoridad Técnica", "Seriedad", "Alta Conversión"],
+    "colors": {
+      "primary": {
+        "name": "Navy",
+        "hex": "#001F5B",
+        "usage": "Headings, elementos de autoridad, texto importante"
+      },
+      "accent": {
+        "name": "Orange",
+        "hex": "#FF6A00",
+        "usage": "CTAs, botones, elementos interactivos críticos"
+      },
+      "background": {
+        "name": "White",
+        "hex": "#FFFFFF",
+        "usage": "Fondos principales para máxima claridad"
+      },
+      "text": {
+        "name": "Dark Gray",
+        "hex": "#1A1A2E",
+        "usage": "Cuerpo de texto para evitar fatiga visual"
+      }
+    },
+    "typography": {
+      "headings": {
+        "family": "Montserrat",
+        "weights": [700],
+        "purpose": "Transmitir autoridad e impacto"
+      },
+      "body": {
+        "family": "Inter",
+        "weights": [400, 500],
+        "purpose": "Legibilidad y claridad en lectura"
+      }
+    },
+    "values": {
+      "profesionalismo": "Cada detalle comunica seriedad técnica",
+      "conversion": "CTAs Orange contrastan estratégicamente con Navy",
+      "accesibilidad": "Contraste WCAG AAA para legibilidad móvil",
+      "modernidad": "Efectos glass y transiciones suaves"
+    }
+  }
+}
